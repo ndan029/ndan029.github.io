@@ -1,3 +1,7 @@
+body {
+    background-color: #cccccc;
+}
+
 /* The navigation bar */
 .navbar {
   list-style-type: none;
