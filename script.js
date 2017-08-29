@@ -13,6 +13,13 @@ myApp.config(function($stateProvider) {
     templateUrl: 'edu.html'
   }
 
+  var aboutState = {
+    name: 'about',
+    url: '/about',
+    templateUrl: 'about.html'
+  }
+
   $stateProvider.state(expState);
   $stateProvider.state(eduState);
+  $stateProvider.state(aboutState);
 });

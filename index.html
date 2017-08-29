@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html>
   <head>
-
-    <!-- SPELLS -->
-    <!-- load angular and angular route via CDN -->
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angular-ui-router/1.0.0-rc.1/angular-ui-router.min.js"></script>
     <script src="script.js"></script>
-    <title>Initial Title</title>
+
+    <link rel="stylesheet" type="text/css" href="index.css">
+
+    <title>Daniel Nguyen</title>
   </head>
   <body ng-app="danielapp">
-    <a ui-sref="exp" ui-sref-active="active">Experience</a>
-    <a ui-sref="edu" ui-sref-active="active">Education</a>
-
-    <ui-view></ui-view>
+    <h1>Daniel Nguyen</h1>
+    <ul class="navbar">
+      <li><a ui-sref="exp" ui-sref-active="active">Experience</a></li>
+      <li><a ui-sref="edu" ui-sref-active="active">Education</a></li>
+      <li><a ui-sref="about" ui-sref-active="active">About</a></li>
+    </ul>
+    <ui-view class="main"></ui-view>
 
   </body>
 </html>
