@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angular-ui-router/1.0.0-rc.1/angular-ui-router.min.js"></script>
     <script src="script.js"></script>
@@ -10,11 +12,14 @@
     <title>Daniel Nguyen</title>
   </head>
   <body ng-app="danielapp">
-    <h1>Daniel Nguyen</h1>
+    <div class="header">
+      <h2>Daniel Nguyen</h2>
+    </div>
     <ul class="navbar">
       <li><a ui-sref="exp" ui-sref-active="active">Experience</a></li>
       <li><a ui-sref="edu" ui-sref-active="active">Education</a></li>
       <li><a ui-sref="about" ui-sref-active="active">About</a></li>
+      <li><a href="https://github.com/ndan029" >My GitHub</a></li>
     </ul>
     <ui-view class="main"></ui-view>
 

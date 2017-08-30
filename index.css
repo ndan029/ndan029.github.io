@@ -1,9 +1,15 @@
 body {
-    background-color: #cccccc;
+  background-color: #cccccc;
 }
+
+.header {
+}
+
+.header > * {}
 
 /* The navigation bar */
 .navbar {
+  display:block;
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -11,9 +17,14 @@ body {
   background-color: #333;
 }
 
+
 .navbar li {
     float: left;
-    position: relative;
+}
+
+.navbar > li:last-child
+{
+    float:right;
 }
 
 .navbar li a {
