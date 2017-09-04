@@ -1,6 +1,10 @@
 var myApp = angular.module('danielapp', ['ui.router']);
 
-myApp.config(function($stateProvider) {
+//$urlRouterProvider.when('/index','/index.html#!/experience');
+
+myApp.config(function($stateProvider, $urlRouterProvider) {
+  $urlRouterProvider.otherwise("/experience")
+
   var expState = {
     name: 'exp',
     url: '/experience',
