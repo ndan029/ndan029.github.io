@@ -44,3 +44,20 @@ body {
     background-color: #4CAF50;
     color: white;
 }
+
+.project_name {
+}
+
+.project_disc {
+}
+
+table {
+  width: 50%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  border: 1px solid #bbb;
+}
+td, th {
+  border-top: 1px solid #ddd;
+  padding: 10px 15px;
+}
